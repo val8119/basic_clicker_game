@@ -14,6 +14,18 @@ body {
     user-select: none;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .container {
     background-color: rgba(130, 238, 255, 0.212);
     width: 300px;
@@ -22,6 +34,7 @@ body {
     margin: 30vh auto 0 auto;
     text-align: center;
     transition: all ease 0.3s;
+    animation: fadeIn 0.5s ease;
 }
 
 .text-cont {
@@ -30,9 +43,39 @@ body {
 
 .container:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .container:active {
+    transform: scale(0.975);
+}
+
+.reset-cont {
+    width: 50px;
+    height: 50px;
+    margin: 150px auto 0 auto;
+    text-align: center;
+}
+
+.reset-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: rgba(130, 238, 255, 0.212);
+    animation: fadeIn 0.5s ease;
+}
+
+.reset-btn:hover {
+    transition: ease 0.5s;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.reset-btn:active {
+    transition: ease 0.3s;
     transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
 }
