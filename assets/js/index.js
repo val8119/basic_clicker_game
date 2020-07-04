@@ -2,6 +2,7 @@
 const circle = document.querySelector(".container");
 const scoreText = document.querySelector(".score");
 const resetBtn = document.querySelector(".reset-btn");
+const tooltip = document.querySelector(".reset-tooltip");
 var score;
 
 // listeners
@@ -13,13 +14,13 @@ resetBtn.addEventListener("click", scoreReset);
 function scoreReset() {
     score = 0;
     localStorage.setItem("score", score);
-    scoreText.innerText = `points: ${score}`;
+    scoreText.innerText = `score: ${score}`;
 }
 
 function scoreAdd() {
     score++;
     localStorage.setItem("score", score);
-    scoreText.innerText = `points: ${score}`;
+    scoreText.innerText = `score: ${score}`;
 }
 
 function scoreGet() {
@@ -28,5 +29,5 @@ function scoreGet() {
     } else {
         score = localStorage.getItem("score");
     }
-    scoreText.innerText = `points: ${score}`;
+    scoreText.innerText = `score: ${score}`;
 }
