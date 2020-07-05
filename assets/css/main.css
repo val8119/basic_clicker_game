@@ -54,11 +54,11 @@ button:hover {
 
 .container:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.025);
 }
 
 .container:active {
-    transform: scale(0.9);
+    transform: scale(0.972);
 }
 
 .reset-cont {
