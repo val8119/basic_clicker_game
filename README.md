@@ -1,2 +1,3 @@
-# basic_clicker_game
- A very basic clicker game
+# Basic Clicker Game
+
+A very basic clicker game with local saving and score resetting
