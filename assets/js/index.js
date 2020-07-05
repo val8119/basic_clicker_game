@@ -7,7 +7,7 @@ const upgradeBtn = document.querySelector(".per-click-upgrade");
 const perClickCurrent = document.querySelector(".per-click-current");
 const perClickCost = document.querySelector(".per-click-cost");
 var scoreAddAmount = 1;
-var scoreAddAmountUpgradeCost = scoreAddAmount * 30;
+var scoreAddAmountUpgradeCost = scoreAddAmount * 75;
 var score = 0;
 
 // listeners
@@ -18,7 +18,7 @@ upgradeBtn.addEventListener("click", upgradePerClick)
 
 // functions
 function upgradePerClick() {
-    scoreAddAmountUpgradeCost = scoreAddAmount * 30;
+    scoreAddAmountUpgradeCost = scoreAddAmount * 75;
 
     if (score >= scoreAddAmountUpgradeCost) {
         scoreAddAmount = scoreAddAmount * 2;
@@ -33,7 +33,7 @@ function scoreReset() {
     localStorage.setItem("score", score);
 
     scoreAddAmount = 1;
-    scoreAddAmountUpgradeCost = scoreAddAmount * 30;
+    scoreAddAmountUpgradeCost = scoreAddAmount * 75;
     localStorage.setItem("scoreAddAmount", scoreAddAmount);
 
     updateText();
@@ -63,7 +63,7 @@ function getData() {
 }
 
 function updateText() {
-    scoreAddAmountUpgradeCost = scoreAddAmount * 30;
+    scoreAddAmountUpgradeCost = scoreAddAmount * 75;
     perClickCurrent.innerText = `${scoreAddAmount} per click`;
     perClickCost.innerText = `(cost: ${scoreAddAmountUpgradeCost})`;
     scoreText.innerText = `points: ${score}`;

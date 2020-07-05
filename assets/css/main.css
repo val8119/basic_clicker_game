@@ -38,10 +38,10 @@ button:hover {
 }
 
 .container {
-    background-color: white;
     width: 300px;
     height: 300px;
     border-radius: 150px;
+    background-color: white;
     margin: 7.5vh auto 0 auto;
     text-align: center;
     transition: all ease 0.3s;
@@ -54,11 +54,11 @@ button:hover {
 
 .container:hover {
     cursor: pointer;
-    transform: scale(1.025);
+    transform: scale(1.1);
 }
 
 .container:active {
-    transform: scale(0.975);
+    transform: scale(0.9);
 }
 
 .reset-cont {
