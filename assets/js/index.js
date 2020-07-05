@@ -7,7 +7,7 @@ const upgradeBtn = document.querySelector(".per-click-upgrade");
 const perClickCurrent = document.querySelector(".per-click-current");
 const perClickCost = document.querySelector(".per-click-cost");
 var scoreAddAmount = 1;
-var scoreAddAmountUpgradeCost = scoreAddAmount * 75;
+var scoreAddAmountUpgradeCost = scoreAddAmount / 2 * 100;
 var score = 0;
 
 // listeners
